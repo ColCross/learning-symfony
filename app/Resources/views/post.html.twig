@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ mode == 'post_new' ? 'Make a New Post' : 'Edit Post' }}{% endblock %}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/post.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- Post Form -->
+    <form action="" method="post">
+        <h1>Create a New Post</h1>
+
+        <div class="post_form">
+            <p class="post_label">Post Title</p>
+            <input class="input_field" id="input_title" type="text" name="form[title]" placeholder="Lorem ipsum..." value="{{ form.title is defined ? form.title : '' }}"></input>
+
+            <p class="post_label">Content</p>
+            <textarea class="input_field" id="input_content" type="text" name="form[content]" rows="15" cols="80" placeholder="Causae vocibus repudiandae eu sea, nobis omittam euripidis pro et...">{{form.content is defined ? form.content : '' }}</textarea>
+
+            <div>
+                <input type="submit" value="Submit Post"></input>
+            </div>
+        </div>
+    </form>
+    <!-- End Post Form -->
+
+{% endblock %}

@@ -1,0 +1,20 @@
+AppBundle\Entity\Posts:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\PostsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: '100'
+        content:
+            type: string
+            length: '3000'
+        date:
+            type: datetime
+    lifecycleCallbacks: {  }

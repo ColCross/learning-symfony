@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/index.css') }}">
+
+{% endblock %}
+
+{% block body %}
+
+    <!-- Blog Title -->
+    <div id="title">
+        <h1>The Dog's out of the Bag</h1>
+        <p>An example blog template built with HTML, CSS, PHP, and the Symfony framework</p>
+    </div>
+    <!-- End Title -->
+
+    <!-- Posts -->
+    {% for post in posts %}
+
+    <div class="post">
+        <h2 class="post_title">{{ post.title }}</h3>
+
+        <span class="post_edit"><a href="{{ path('post_edit', { 'post_id' : post.id }) }}">Edit</a> | <a href="{{ path('post_delete', { 'post_id' : post.id }) }}">Delete</a></span>
+
+        <h5>{{ post.date.format('m-d-Y') }}</h5>
+
+        <p class="post_content">{{ post.content }}</p>
+    </div>
+
+    {% endfor %}
+    <!-- End Posts -->
+
+    <!-- TODO: Pagination -->
+
+{% endblock %}

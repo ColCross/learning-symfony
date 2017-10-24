@@ -1,0 +1,58 @@
+/**************** 
+    Title 
+*****************/
+#title {
+    margin: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+}
+
+#title h1 {
+    font-size: 70px;
+    color: rgb(51, 51, 51);
+    padding-bottom: 8px;
+}
+
+/* Title Subheader */
+#title p {
+    position: relative;
+    left: 40px;
+    color: rgb(153,153,153);
+    font-size: 20px;
+}
+
+/**************** 
+    Posts 
+*****************/
+.post {
+    position: relative;
+    margin-bottom: 15px;
+    left: 60px;
+    border: 3px solid silver;
+    border-radius: 10px;
+    width: 55%;
+    padding: 10px;
+}
+
+.post_edit {
+    position: absolute;
+    right: 10px;
+}
+
+/* Post Titles */
+.post h2 {
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+
+/* Dates */
+.post h5 {
+    border-bottom: 1px solid grey;
+    font-size: 18px;
+    color: #FF6700;
+    padding-bottom: 3px;
+}
+
+.post p {
+    margin-top: 10px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Dogs > Cats{% endblock %}</title>
+
+        <!-- CSS Magic -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/base.css') }}">
+        {% block stylesheets %}{% endblock %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+
+        <!-- Navbar-->
+        <div class="navbar">
+            <ol>
+                <li><a href="{{ path('home') }}">Home</a></li>
+                <li><a href="{{ path('post_new') }}">New Post</a></li>
+            </ol>
+        </div>
+        <!-- End Navbar -->
+
+        <div class="content">
+            {% block body %}{% endblock %}
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>No animals were harmed in the making of this blog</p>
+            <p id="im_kidding">maybe one cat</p>
+            <p><a href="#">Return to the Top</a></p>
+        </div>
+        <!-- End Footer -->
+
+    </body>
+</html>

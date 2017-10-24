@@ -1,0 +1,57 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.3
+-- https://www.phpmyadmin.net/
+--
+-- Host: localhost:3306
+-- Generation Time: Oct 24, 2017 at 07:26 AM
+-- Server version: 5.6.35
+-- PHP Version: 7.1.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `dogs`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `posts`
+--
+
+CREATE TABLE `posts` (
+  `id` int(11) NOT NULL,
+  `title` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `content` varchar(3000) COLLATE utf8_unicode_ci NOT NULL,
+  `date` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `posts`
+--
+
+INSERT INTO `posts` (`id`, `title`, `content`, `date`) VALUES
+(13, 'Lorem ipsum...', 'Lorem ipsum dolor sit amet, est salutatus prodesset cu, ex nam ullum velit malorum. At vis quando tantas ornatus. Impedit voluptua mea no, in pro meliore intellegam voluptatibus. In illum officiis mea. Fastidii iracundia vix an.\r\n\r\nNe mel veri lorem, ut ludus eripuit eos. Magna dicunt latine eu nam. Dico reque no vis, reque doming numquam qui ea. Te eum graeci civibus, mea ne mazim inimicus oportere. Eum duis iudico te, mea te elit partem ponderum, mei ad diceret volutpat conclusionemque.\r\n\r\nEx sit quod justo doctus, aliquip luptatum quo cu. Te veri eripuit alienum quo, ignota latine eum ex, et sea vidisse placerat. Eam in maiorum blandit, ex novum putant eruditi eos, sit id probatus complectitur. Regione deterruisset qui an, in iisque reprimique sea. An quo quod oportere, nec tota soluta intellegebat at, at iudico adipisci constituam vel. At sit posse option eloquentiam, eam ei meis dignissim vituperata, qui te meis facilisi repudiare.\r\n\r\nSale inermis constituto has ei, ad cum altera aperiri fabulas. Vel ei scaevola scriptorem, suas eripuit forensibus ei nec, illum expetendis est ne. Labore ponderum probatus eu vim. Ut ludus suavitate nec, id vis congue persius, est ne accumsan corrumpit hendrerit. Mea ex fabulas apeirian aliquando, eam soluta periculis ad. An sint vero pericula duo, id mnesarchum disputationi qui.\r\n\r\nNobis temporibus vim an. Ei numquam propriae sea. Iudico altera et eos, quo diam tota ceteros ut. Ei vis errem iracundia. Ad veniam verterem mandamus nec, in sed tacimates contentiones comprehensam. Cu esse dicam numquam nam. Tibique voluptatum eam in, detracto facilisi voluptatum eos in, vix dicunt aeterno aliquando ex.\r\n\r\nAn omnes definitiones mei. At quas insolens usu. Ut eam nihil constituto consetetur. Cum case diceret efficiendi et, eu dolor oratio conclusionemque mea.\r\n\r\nVis in omittam qualisque dignissim, ex vim quas probo habemus. Ut pro nulla consequat, laudem soleat democritum vel ad. Sed et quod eleifend definiebas, at vel fugit everti, ne qui putent commodo dissentiet. Id sed inani malorum, sea in natum tempor, ex tale salutandi vix. At mazim possit albucius eum. Est tempor alienum ne, has id solum utroque.\r\n\r\nPartiendo consectetuer id sit, has an dicam soleat nostrum, an mei harum dicit. Ei assum phaedrum complectitur mei, in eum nominavi referrentur, cu quis everti gloriatur mel. Ex affert posidonium vel, mei at blandit detraxit constituto. Ei case nulla epicuri sea. Illud affert pri no.\r\n\r\nSolet forensibus definiebas ea sea, cu eos augue definitiones. In quo oratio officiis, an vel admodum principes dissentiet. In per delectus pertinax invenire, ei accusam molestiae mea. Illum facete civibus et usu, ne qui illud justo deserunt. Eros offendit facilisis est at.\r\n\r\nId vis oratio nostrum iracundia, cum ne libris qualisque consectetuer. Hinc vidit malis vim an, vim et essent postulant efficiendi. Id constituam quaerendum has. Mollis recusabo ea mei. Et dolorem vocibus erroribus quo. Diam officiis menandri ad qui, iusto a', '2017-10-24 04:42:58'),
+(14, 'Dogs are the best', 'Need I say more?', '2017-10-24 04:43:31'),
+(15, 'Cat\'s really are the worst', 'That really doesn\'t require any explanation.', '2017-10-24 04:45:34');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `posts`
+--
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `posts`
+--
+ALTER TABLE `posts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
